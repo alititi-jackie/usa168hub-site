@@ -4,11 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="theme-color" content="#0078d4">
-  <title>usa168hub.com - 美国华人168平台中心 · 华人常用网站一站式入口</title>
-  <meta name="description" content="usa168hub.com 是一个专为在美华人打造的高效导航网站，汇聚华人常用的新闻、视频、购物、AI 工具、生活服务等网站，一键直达，轻松上网。">
-  <meta name="keywords" content="美国华人168, 华人168, 华人常用网站, 华人AI工具, usa168hub, 华人网址大全, usa168hub.com, 美国华人168平台中心">
-  <link rel="icon" type="image/ico" href="favicon.ico">
+  <title>美国华人168平台中心 | TapBi.com</title>
+  <meta name="description" content="美国华人168平台中心 | usa168hub.com，为美国华人提供导航、资讯、服务的一站式平台，涵盖华人168、华人导航、168招聘、168找工作、168二手、华人AI工具、华人网址大全、华人资讯、美国导航等内容，助力美国华人轻松上网、便捷生活。">
+  <meta name="keywords" content="美国华人168平台中心, 华人168, 美国168，华人导航, 168招聘, 168找工作, 168二手, tapbi, 塔比，美国华人, 华人AI工具, 华人网址大全, 华人资讯, 美国导航, usa168hub.com, jozl.com, usa168hub.com, jozl.com, forall,forall.help,joeabc.com, alititi.com">
+  <link rel="canonical" href="https://www.tapbi.com/">
+  <link rel="alternate" href="https://tap.bi/" />
+  <meta property="og:title" content="美国华人168平台中心 | usa168hub.com" />
+  <meta property="og:description" content="为美国华人提供导航、资讯、服务的一站式平台，168招聘、168找工作、168二手、华人AI工具、华人网址大全、美国导航。" />
+  <meta property="og:image" content="https://www.usa168hub.com/logo.png" />
+  <meta property="og:url" content="https://www.usa168hub.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="美国华人168平台中心 | usa168hub.com">
+  <meta name="twitter:description" content="为美国华人提供导航、资讯、服务的一站式平台，168招聘、168找工作、168二手、华人AI工具、华人网址大全、美国导航。">
+  <meta name="twitter:image" content="https://www.usa168hub.com/logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "美国华人168平台中心 | usa168hub.com",
+    "url": "https://www.tapbi.com/",
+    "description": "为美国华人提供导航、资讯、服务的一站式平台，168招聘、168找工作、168二手、华人AI工具、华人网址大全、美国导航。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
   <style>
+    * { box-sizing: border-box; }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -16,34 +37,47 @@
       background-color: #f5f5f5;
     }
     header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       background-color: #eef2f3;
-      padding: 10px 20px;
+      padding: 20px 10px 20px 10px;
+      text-align: center;
       border-bottom: 1px solid #ddd;
       position: relative;
     }
-    .header-left img {
-      height: 120px;
-      width: auto;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    .site-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
-    .header-center {
-      flex: 1;
-      text-align: center;
+    .site-logo img {
+      width: 200px;
+      max-width: 25vw;
+      height: auto;
+      margin-bottom: 8px;
     }
-    .logo-text a {
-      color: #222;
-      text-decoration: none;
+    .main-title {
       font-size: 2.1rem;
-      line-height: 1.2;
+      font-weight: bold;
+      margin: 0 0 5px 0;
+      color: #183a60;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-size: 1.07rem;
+      color: #3e3e3e;
+      margin-bottom: 10px;
+      letter-spacing: .5px;
     }
     .weather {
       font-size: 14px;
       color: #555;
-      margin-top: 6px;
+      margin-top: 8px;
+    }
+    .top-actions {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
     }
     .top-actions button {
       padding: 8px 14px;
@@ -58,14 +92,7 @@
     .top-actions button:hover {
       background-color: #005fa3;
     }
-    .nav, .recommend, .section, .section1, .section2 {
-      background: #fff;
-      margin: 10px auto;
-      padding: 10px;
-      max-width: 95vw;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
+    /* AI平台直达导航样式 */
     .ai-nav-links {
       display: flex;
       justify-content: center;
@@ -83,6 +110,7 @@
       font-weight: bold;
       text-decoration: none;
       transition: background 0.2s, color 0.2s;
+      box-shadow: 0 2px 8px rgba(0,120,212,0.06);
       margin-bottom: 4px;
     }
     .ai-nav-links a:hover {
@@ -113,7 +141,20 @@
     .search input[type="text"]:focus {
       border-color: #0078d4;
     }
-    .recommend a, .section a, .section1 a, .toggle-content a {
+    .nav, .categories, .card, .bookmark, .recommend, .section, .section1, .section2, .section3 {
+      background: #fff;
+      margin: 10px auto;
+      padding: 10px;
+      max-width: 95vw;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.2s;
+    }
+    .recommend a, .section a, .section1 a, .section2 a, .section3 a {
       display: inline-block;
       margin: 5px 10px;
       font-size: 14px;
@@ -121,17 +162,9 @@
       border-radius: 5px;
       transition: background 0.15s, color 0.15s;
     }
-    .recommend a:hover, .section a:hover, .section1 a:hover, .toggle-content a:hover {
+    .recommend a:hover, .section a:hover, .section1 a:hover, .section2 a:hover, .section3 a:hover {
       background: #0078d41a;
       color: #0078d4;
-    }
-    .toggle-header {
-      font-weight: bold;
-      cursor: pointer;
-      user-select: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
     .footer {
       text-align: center;
@@ -141,6 +174,7 @@
       background-color: #eef2f3;
       margin-top: 40px;
     }
+    .footer a { color: #1670b8; }
     .back-to-top {
       display: none;
       position: fixed;
@@ -154,40 +188,137 @@
       border-radius: 5px;
       cursor: pointer;
       z-index: 999;
+      transition: background 0.3s, opacity 0.25s;
       opacity: 0.85;
     }
     .back-to-top:hover {
       background-color: #005fa3;
       opacity: 1;
     }
+    @media (max-width: 600px) {
+      .main-title { font-size: 1.1rem; }
+      .site-logo img { width: 70px; }
+      .ai-nav-links a { font-size: 13px; padding: 6px 12px; }
+      .ai-nav-links { gap: 0.5em; }
+      .recommend a, .section a { font-size: 12px; margin: 4px 6px; }
+      .section, .section1, .section2, .section3, .recommend { padding: 8px; }
+      .search { margin: 10px auto; }
+      .footer { font-size: 11px; }
+    }
+    /* 动画折叠内容 */
+    .toggle-content {
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(.4,0,.2,1);
+      max-height: 0;
+    }
+    .toggle-content.open {
+      max-height: 900px;
+      transition: max-height 0.5s cubic-bezier(.4,0,.2,1);
+    }
+    .toggle-header {
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      padding: 6px 0;
+      color: #0078d4;
+      margin-bottom: 2px;
+    }
+    /* 成人专区 */
+    .adult-section {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #fff;
+      text-align: center;
+      position: relative;
+    }
+    .adult-toggle {
+      cursor: pointer;
+      font-size: 18px;
+      user-select: none;
+      color: #f44336;
+      margin-bottom: 6px;
+    }
+    .adult-links {
+      margin-top: 10px;
+      display: none;
+      animation: fadeIn 0.35s;
+    }
+    .adult-links a {
+      margin: 5px 10px;
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+    }
+    .adult-confirm {
+      background: rgba(0,0,0,0.7);
+      position: fixed;
+      left: 0; top: 0; right: 0; bottom: 0;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .adult-confirm-inner {
+      background: #fff;
+      padding: 24px 28px;
+      border-radius: 10px;
+      text-align: center;
+      min-width: 200px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+    .adult-confirm button {
+      margin: 12px 16px 0 16px;
+      padding: 7px 16px;
+      font-size: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #0078d4;
+      color: #fff;
+      transition: background 0.2s;
+    }
+    .adult-confirm button:hover {
+      background: #005fa3;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
   </style>
+  <script>
+    // 301重定向域名
+    if (
+      location.hostname === 'jozl.com' ||
+      location.hostname === 'www.jozl.com' ||
+      location.hostname === 'usa168hub.com' ||
+      location.hostname === 'www.usa168hub.com'
+    ) {
+      location.href = "https://www.usa168hub.com" + location.pathname + location.search + location.hash;
+    }
+  </script>
 </head>
 <body>
   <header>
-    <div class="header-left">
-      <img src="logo.png" alt="美国华人168平台中心logo" loading="lazy">
+    <div class="site-logo">
+      <img src="logo.png" alt="美国华人168平台中心 usa168hub.com logo" width="120" height="120" loading="lazy" />
+      <div class="main-title">美国华人168平台中心 | usa168hub.com</div>
+      <div class="subtitle">为美国华人提供导航、资讯、服务的一站式平台  | usa168hub.com</div>
     </div>
-    <div class="header-center">
-      <div class="logo-text">
-        <a href="/">
-          usa168hub.com<br>
-          美国华人168平台中心
-        </a>
-      </div>
-      <div class="weather" id="weather" aria-live="polite">正在获取天气信息...</div>
-    </div>
+    <div class="weather" id="weather" aria-live="polite">正在获取天气信息...</div>
     <div class="top-actions">
-      <button onclick="addBookmark()">📌 收藏本站</button>
+      <button onclick="addBookmark()" aria-label="收藏本站">📌 收藏本站</button>
     </div>
   </header>
 
   <section class="nav" style="text-align:center; padding: 10px; font-size:15px; line-height:1.7;">
-    <p><strong>usa168hub.com</strong>（美国华人168平台中心）是专为 <strong>在美华人</strong> 打造的一站式 <strong>华人网址导航</strong>。</p>
+    <p><strong>美国华人168平台中心 | usa168hub.com</strong>，为 <strong>美国华人</strong> 打造的一站式 <strong>导航、资讯、服务平台</strong>。无论你关注 <strong>视频、购物、AI工具、招聘、找工作、二手、新闻、生活服务、社交、政府服务</strong>，这里都能一键直达。简单、实用、安全，是您在美生活、工作的得力助手。</p>
   </section>
 
   <!-- AI平台直达链接区块 -->
   <nav class="ai-nav-links" aria-label="AI平台直达">
-    <a href="https://tapbi.com/ai">AI平台直达</a>
+    <a href="https://usa168hub.com/ai">AI平台直达</a>
     <a href="https://joeabc.com/">跟Joe学英语</a>
     <a href="https://jozl.com/">Jozl.com</a>
     <a href="#" target="_blank" rel="noopener noreferrer">🔞18Hub.vip</a>
@@ -228,7 +359,7 @@
     <a href="https://www.chinaqw.com/" target="_blank" rel="noopener noreferrer">中国侨网</a>
     <a href="https://www.ccyp.com/" target="_blank" rel="noopener noreferrer">华人工商黄页</a>
     <a href="https://zh.dmv.ny.gov/" target="_blank" rel="noopener noreferrer">DMV NY</a>
-    <a href="https://tapbi.com/dmv">DMV (美国各州车辆管理局)</a>
+    <a href="https://usa168hub.com/dmv">DMV (美国各州车辆管理局)</a>
     <a href="https://www.voachinese.com/" target="_blank" rel="noopener noreferrer">美国之音</a>
     <a href="https://www.nytimes.com/" target="_blank" rel="noopener noreferrer">纽约时报</a>
     <a href="https://cn.aliyun.com/" target="_blank" rel="noopener noreferrer">阿里云</a>
@@ -309,7 +440,7 @@
       <a href="https://www.suno.ai/" target="_blank" rel="noopener noreferrer">Suno AI</a>
     </div>
     <div style="margin-top:10px;"><strong>🏛️ 美国政府部门：</strong>
-      <a href="https://tapbi.com/dmv">DMV (美国各州车辆管理局)</a>
+      <a href="https://usa168hub.com/dmv">DMV (美国各州车辆管理局)</a>
       <a href="https://www.usa.gov/" target="_blank" rel="noopener noreferrer">USA.gov（美国政府门户）</a>
       <a href="https://www.irs.gov/" target="_blank" rel="noopener noreferrer">IRS（国税局）</a>
       <a href="https://www.ssa.gov/" target="_blank" rel="noopener noreferrer">SSA（社会安全局）</a>
@@ -453,16 +584,23 @@
     </div>
   </nav>
 
+
+  <!-- 回到顶部按钮 -->
+  <button class="back-to-top" onclick="scrollToTop()" aria-label="回到顶部" id="backToTopBtn">⬆️ 回到顶部</button>
+
+  <!-- 底部 -->
   <footer class="footer">
-    © 2025 <a href="https://www.usa168hub.com" target="_blank">usa168hub.com</a> 保留所有权利 | 联系邮箱：<a href="mailto:info@jozl.com">info@jozl.com</a></p>
+    © 2025 <a href="https://www.usa168hub.com" target="_blank" rel="noopener noreferrer"> usa168hub.com</a> 保留所有权利 | 联系邮箱：<a href="mailto:info@jozl.com">info@jozl.com</a>
+    <br/>
+    <span> 华人168, 华人导航, 168招聘, 168找工作, 168二手, tapbi, 美国华人, 华人AI工具, 华人网址大全, 华人资讯, 美国导航</span>
   </footer>
 
-  <button class="back-to-top" onclick="scrollToTop()" id="backToTopBtn">⬆️ 回到顶部</button>
-
   <script>
+    // 天气
     async function getLocationWeather() {
       const weatherElem = document.getElementById('weather');
       try {
+        // 本地缓存6小时，减少请求
         const cache = localStorage.getItem('alititi_weather');
         const cacheTime = localStorage.getItem('alititi_weather_time');
         if (cache && cacheTime && (Date.now() - cacheTime < 6 * 60 * 60 * 1000)) {
@@ -474,38 +612,76 @@
         weatherElem.textContent = weatherText;
         localStorage.setItem('alititi_weather', weatherText);
         localStorage.setItem('alititi_weather_time', Date.now());
-      } catch {
+      } catch (error) {
         weatherElem.textContent = '天气信息获取失败，请稍后再试';
       }
     }
 
+    // 收藏
     function addBookmark() {
-      alert('请使用 Ctrl+D (或 Cmd+D) 收藏本网站');
+      alert('请使用 Ctrl+D (或 Cmd+D) 收藏本网站，或在浏览器菜单中选择“添加书签”');
     }
 
+    // 回到顶部
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
+    // 显示回到顶部按钮
     window.addEventListener('scroll', function() {
       const btn = document.getElementById('backToTopBtn');
-      btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+      if (window.scrollY > 200) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
     });
 
+    // 折叠区动画
     function toggleSection(id) {
-      const content = document.getElementById(id);
-      const header = document.getElementById(id + 'Header');
-      const arrow = document.getElementById(id + 'Arrow');
-      const expanded = content.style.display !== 'none';
-      content.style.display = expanded ? 'none' : 'block';
-      header.setAttribute('aria-expanded', !expanded);
-      arrow.textContent = expanded ? '▶' : '▼';
+      const section = document.getElementById(id);
+      if (section) {
+        const expanded = section.classList.toggle('open');
+        section.setAttribute('aria-expanded', expanded);
+      }
     }
 
+    // 成人专区二次确认
     document.addEventListener("DOMContentLoaded", function () {
       getLocationWeather();
+
+      const toggle = document.getElementById("adult-toggle");
+      const content = document.getElementById("adult-content");
+      let confirmed = false;
+      if(toggle && content) {
+        toggle.addEventListener("click", function () {
+          if (!confirmed) {
+            showAdultConfirm();
+          } else {
+            content.style.display = content.style.display === "block" ? "none" : "block";
+          }
+        });
+        toggle.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") toggle.click();
+        });
+      }
+
+      function showAdultConfirm() {
+        const dlg = document.createElement('div');
+        dlg.className = 'adult-confirm';
+        dlg.innerHTML = '<div class="adult-confirm-inner"><div style="font-size:18px;font-weight:bold;color:#f44336;margin-bottom:14px;">18+</div><div style="margin-bottom:12px;">本专区仅限成年人访问，您已年满18岁？</div><button id="adultYes">是，进入</button><button id="adultNo">否，返回</button></div>';
+        document.body.appendChild(dlg);
+        document.getElementById('adultYes').onclick = () => {
+          confirmed = true;
+          content.style.display = "block";
+          document.body.removeChild(dlg);
+        };
+        document.getElementById('adultNo').onclick = () => {
+          confirmed = false;
+          content.style.display = "none";
+          document.body.removeChild(dlg);
+        };
+      }
     });
   </script>
 </body>
 </html>
-
