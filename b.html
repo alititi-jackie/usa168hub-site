@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAP.BI — Domain For Sale</title>
+  <meta name="description" content="TAP.BI domain for sale. Short, memorable, brandable. Click purchase link or email the owner.">
+  <meta property="og:title" content="TAP.BI — Domain For Sale">
+  <meta property="og:description" content="Short. Memorable. Brandable. Contact: 323748@gmail.com">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E💡%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--bg:#0b1220;--card:#101935;--muted:#9aa3b2;--text:#e6ecff;--accent:#87b6ff;--btn:#2563eb;--btnh:#1d4ed8;--ring:#60a5fa}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,rgba(96,165,250,.15),transparent),radial-gradient(800px 400px at 10% 110%,rgba(34,197,94,.08),transparent),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:inherit}
+    .wrap{min-height:100%;display:grid;place-items:center;padding:24px}
+    .card{width:min(880px,92vw);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);backdrop-filter: blur(8px);border-radius:24px;box-shadow: 0 10px 40px rgba(0,0,0,.35);overflow:hidden}
+    .card-inner{padding:32px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(37,99,235,.15);border:1px solid rgba(37,99,235,.35);color:#dbeafe;font-weight:600}
+    .lang{display:flex;gap:8px}
+    .lang button{background:transparent;border:1px solid rgba(255,255,255,.25);color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+    .lang button.active{border-color:var(--ring);box-shadow:0 0 0 3px rgba(96,165,250,.25)}
+    h1{font-size:clamp(36px,6vw,64px);margin:18px 0 6px;letter-spacing:.02em}
+    .sub{color:var(--muted);font-size:clamp(14px,2.1vw,18px)}
+    .grid{display:grid;grid-template-columns: 1fr;gap:24px;margin-top:28px}
+    @media (min-width:760px){.grid{grid-template-columns:1.2fr .8fr}}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;border:none;border-radius:14px;padding:14px 18px;font-weight:700;cursor:pointer;text-decoration:none}
+    .btn.buy{background:var(--btn);color:white}
+    .btn.buy:hover{background:var(--btnh)}
+    .btn.mail{background:rgba(255,255,255,.08);color:var(--text);border:1px solid rgba(255,255,255,.16)}
+    .btn.mail:hover{background:rgba(255,255,255,.14)}
+    .pill{display:inline-flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .pill span{padding:6px 10px;border:1px dashed rgba(255,255,255,.22);border-radius:999px;color:#c7d2fe}
+    .aside{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px}
+    .aside h3{margin:0 0 8px;font-size:18px}
+    .aside p{margin:4px 0;color:#cbd5e1}
+    footer{padding:18px 26px;color:#9aa3b2;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.08)}
+    .copy{display:inline-flex;align-items:center;gap:10px}
+    .copy button{border:1px solid rgba(255,255,255,.2);background:transparent;color:var(--text);padding:6px 10px;border-radius:8px;cursor:pointer}
+    .notice{color:#facc15;font-weight:600}
+  </style>
+  <script>
+    const i18n = {
+      zh: {
+        selling: '域名出售',
+        sub: '简短 • 易记 • 品牌友好',
+        buy: '立即购买（Dynadot）',
+        contact: '邮件联系所有者',
+        features: ['三字符 TAP', '.BI 国家域名', '极佳品牌潜力', '适合资讯/提示/AI 助手'],
+        notesTitle: '购买说明',
+        note1: '页面所示购买链接由卖家提供。',
+        note2: '请通过邮箱确认具体购买事宜。',
+        email: '联系邮箱',
+      },
+      en: {
+        selling: 'Domain For Sale',
+        sub: 'Short • Memorable • Brandable',
+        buy: 'Buy Now (Dynadot)',
+        contact: 'Contact Owner via Email',
+        features: ['Three-letter TAP', '.BI ccTLD', 'Strong brand potential', 'Great for tips/news/AI assistant'],
+        notesTitle: 'Purchase Notes',
+        note1: 'The purchase link shown is provided by the seller.',
+        note2: 'Please confirm details via email.',
+        email: 'Contact Email',
+      }
+    }
+    function setLang(l){
+      document.documentElement.lang = l;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k = el.getAttribute('data-i18n');
+        if(k.startsWith('features.')){
+          const idx = +k.split('.')[1];
+          el.textContent = i18n[l].features[idx] || '';
+        } else {
+          el.textContent = i18n[l][k] || '';
+        }
+      });
+      document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active', b.dataset.lang===l));
+    }
+    function copyEmail(){
+      const email = '323748@gmail.com';
+      navigator.clipboard.writeText(email).then(()=>{
+        const btn = document.getElementById('copyBtn');
+        const old = btn.textContent; btn.textContent='Copied';
+        setTimeout(()=>btn.textContent=old,1500);
+      });
+    }
+    document.addEventListener('DOMContentLoaded',()=>setLang('en'))
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    "itemOffered": {"@type":"Domain","name":"TAP.BI"},
+    "price": "Contact",
+    "priceCurrency": "USD",
+    "url": "https://www.dynadot.com/zh?domain=TAP.BI",
+    "seller": {"@type":"Person","email":"323748@gmail.com"}
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main">
+      <div class="card-inner">
+        <div class="top">
+          <span class="badge" aria-label="for sale">
+            <span>💡</span>
+            <span data-i18n="selling">Domain For Sale</span>
+          </span>
+          <div class="lang" aria-label="language switcher">
+            <button data-lang="zh" onclick="setLang('zh')">中文</button>
+            <button data-lang="en" class="active" onclick="setLang('en')">EN</button>
+          </div>
+        </div>
+
+        <h1>TAP.BI</h1>
+        <div class="sub" data-i18n="sub">Short • Memorable • Brandable</div>
+
+        <div class="cta">
+          <a class="btn buy" href="https://www.dynadot.com/zh?domain=TAP.BI" target="_blank" rel="noopener noreferrer">
+            🛒 <span data-i18n="buy">Buy Now (Dynadot)</span>
+          </a>
+          <a class="btn mail" href="mailto:323748@gmail.com">
+            ✉️ <span data-i18n="contact">Contact Owner via Email</span>
+          </a>
+        </div>
+
+        <div class="grid">
+          <section>
+            <div class="pill">
+              <span data-i18n="features.0">Three-letter TAP</span>
+              <span data-i18n="features.1">.BI ccTLD</span>
+              <span data-i18n="features.2">Strong brand potential</span>
+              <span data-i18n="features.3">Great for tips/news/AI assistant</span>
+            </div>
+          </section>
+          <aside class="aside">
+            <h3 data-i18n="notesTitle">Purchase Notes</h3>
+            <p data-i18n="note1">The purchase link shown is provided by the seller.</p>
+            <p data-i18n="note2">Please confirm details via email.</p>
+            <p><strong data-i18n="email">Contact Email</strong>: <a href="mailto:323748@gmail.com">323748@gmail.com</a></p>
+            <div class="copy"><code>323748@gmail.com</code><button id="copyBtn" onclick="copyEmail()">Copy</button></div>
+          </aside>
+        </div>
+      </div>
+      <footer>
+        <span>© <span id="year"></span> TAP.BI</span>
+        <span>Powered by a simple static page</span>
+      </footer>
+    </main>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+
+
