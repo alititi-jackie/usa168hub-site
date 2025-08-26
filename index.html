@@ -318,13 +318,26 @@
     style="background-color:#007bff; color:#fff; border:none; border-radius:20px; padding:8px 16px; cursor:pointer;">
     🔞69nav.com
   </button>
+  
 </nav>
 
+<!-- 复制提示 -->
+<div id="copyToast" 
+     style="visibility:hidden; min-width:120px; background:#333; color:#fff; text-align:center; border-radius:8px; padding:8px; position:fixed; z-index:1; bottom:30px; left:50%; transform:translateX(-50%);">
+  已复制
+</div>
+
 <script>
-  document.getElementById("copy69nav").addEventListener("click", function () {
+  const btn = document.getElementById("copy69nav");
+  const toast = document.getElementById("copyToast");
+
+  btn.addEventListener("click", function () {
     const link = "https://69nav.com/";
     navigator.clipboard.writeText(link).then(() => {
-      alert("已复制链接：" + link);
+      toast.style.visibility = "visible";
+      setTimeout(() => {
+        toast.style.visibility = "hidden";
+      }, 1500); // 1.5秒后消失
     }).catch(err => {
       console.error("复制失败：", err);
     });
